@@ -1,0 +1,124 @@
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    overflow-x: hidden;
+
+    .container1 {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: y mandatory;
+        overflow-y: hidden;
+        overflow-x: hidden;
+
+        section {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            scroll-snap-align: start;
+
+            &:nth-child(1) {
+                background-color: rgb(28, 28, 28);
+                color: green;
+                gap: 3rem;
+                flex-direction: column;
+
+                .img-hero {
+                    width: 150px;
+                    height: 150px;
+                    border-radius: 50%;
+                }
+            }
+
+            &:nth-child(2) {
+                width: 100%;
+                align-items: center;
+                font-size: 8em;
+                background-color: rgb(38, 38, 38);
+                color: blue;
+            }
+
+            h1 {
+                font-family: helvetica;
+                font-size: 2em;
+            }
+        }
+    }
+
+    .container2 {
+        width: 100%;
+        height: 100%;
+        scroll-snap-type: x mandatory;
+        overflow-x: visible;
+        overflow-y: hidden;
+        display: flex;
+
+        section {
+            flex: none;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+            scroll-snap-align: start;
+
+            &:nth-child(1) {
+                background-color: rgb(28, 28, 28);
+                color: green;
+                position: relative;
+            }
+            &:nth-child(2) {
+                background-color: rgb(28, 28, 28);
+                color: rgb(197, 194, 194);
+                position: relative;
+            }
+            &:nth-child(3) {
+                background-color: rgb(28, 28, 28);
+                color: green;
+                position: relative;
+            }
+            &:nth-child(4) {
+                background-color: rgb(197, 194, 194);
+                position: relative;
+                
+
+    
+
+                    .imgg {
+                        width: 300px;
+                        height: 300px;
+                    }
+                
+            }
+
+            h1 {
+                font-family: helvetica;
+                font-size: 15em;
+            }
+
+            h4 {
+                font-size: 15em;
+            }
+
+            .abs {
+                position: absolute;
+                left: 0;
+                z-index: 1;
+            }
+
+            .abs2 {
+                position: absolute;
+                right: 2rem;
+                top: 2rem;
+            }
+
+            .abs3 {
+                position: absolute;
+                left: -15rem;
+                bottom: -5rem;
+            }
+        }
+    }
+}
